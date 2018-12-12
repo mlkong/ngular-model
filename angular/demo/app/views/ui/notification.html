@@ -1,0 +1,66 @@
+<div class="container-fluid" ng-controller="NotificationCtrl as ctrl">
+	<div class="page-title">
+		<h4>Notification</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-block">
+					<h4 class="card-title">Noty</h4>
+					<p class="width-90 mrg-btm-30">NOTY is a notification library that makes it easy to create alert - success - error - warning - information - confirmation messages as an alternative the standard alert dialog.</p>
+					<div class="row">
+						<div class="col-md-7">
+							<div class="row">
+								<div class="col-md-12">
+							        <div class="mrg-btm-20">
+								        <label class="control-label" for="noty-messenger-type">Type</label>
+								        <selectize id="noty-messenger-type" placeholder="Choose Notification Type" options='ctrl.notyType' config="ctrl.selectizeConfig" ng-model="ctrl.selectizeModel" ng-disabled='disable' required='true'></selectize>
+							        </div>
+								</div>
+								<div class="col-md-12">
+									<div class="mrg-btm-20">
+								        <label class="control-label" for="noty-position">Position</label>
+								        <selectize id="noty-position" placeholder="Pick your position" options='ctrl.position' config="ctrl.selectizeConfig" ng-model="ctrl.selectizeModel2" ng-disabled='disable' required='true'></selectize>
+							        </div>
+								</div>
+								<div class="col-md-12">
+									<label class="control-label" for="message">Message</label>
+							        <textarea class="form-control" id="noty-message" rows="2" placeholder="Type your message ..."></textarea>
+							       	<div class="mrg-top-20">
+									    <a href="javascript:;" class="btn btn-primary" ng-click="ctrl.showNoty()">
+									    	<span>Trigger</span>
+									    </a>
+								    </div>
+								</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-block">
+					<h4 class="card-title">Sweet Alert</h4>
+					<p>Sweetalert is a beautiful replacement for JavaScript "alert"</p>
+					<p>SweetAlert automatically centers itself on the page and looks great no matter if you're using a desktop computer, mobile or tablet. It's even highly customizeable, as you can see below!</p>
+					<div class="mrg-top-20 mrg-btm-30">
+						<a href="" class="btn btn-default btn-rounded" ng-click="ctrl.sweetAlert1();">Simple Message</a>
+						<a href="" class="btn btn-primary btn-rounded" ng-click="ctrl.sweetAlert2();">With Text</a>
+						<a href="" class="btn btn-success btn-rounded" ng-click="ctrl.sweetAlert3();">Success Message</a>
+					</div>
+					<h5>With Function</h5>
+					<p>A warning message, with a function attached to the "Confirm"-button</p>
+					<div class="mrg-top-20 mrg-btm-30">
+						<a href="" class="btn btn-warning btn-rounded" ng-click="ctrl.sweetAlert4();">Try Me</a>
+					</div>
+					<h5>Passing a Parameter</h5>
+					<p>you can execute something else for "Cancel".</p>
+					<div class="mrg-top-20 mrg-btm-30">
+						<a href="" class="btn btn-danger btn-rounded" ng-click="ctrl.sweetAlert5();">Try Me</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

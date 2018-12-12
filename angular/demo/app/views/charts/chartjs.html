@@ -1,0 +1,73 @@
+<div class="container-fluid" ng-controller="chartJsCtrl as ctrl">
+	<div class="page-title">
+		<h4>ChartJs </h4>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Pie Chart</h4>
+				</div>
+				<div class="card-block">
+					<canvas id="pie" height="150" class="chart chart-pie" chart-data="ctrl.pieData" chart-labels="ctrl.pieLabels" chart-options="ctrl.pieOptions" chart-colors="ctrl.pieColors"></canvas> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Donut Chart</h4>
+				</div>
+				<div class="card-block">
+					<canvas id="doughnut" height="150" class="chart chart-doughnut" chart-data="ctrl.donutData" chart-labels="ctrl.donutLabels" chart-options="ctrl.donutOptions" chart-colors="ctrl.donutColors"></canvas> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Radar Chart</h4>
+				</div>
+				<div class="card-block">
+					<canvas id="pie" height="150" class="chart chart-radar" chart-data="ctrl.radarData" chart-labels="ctrl.radarLabels" chart-options="ctrl.radarOptions" chart-colors="ctrl.radarColors"></canvas> 
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Polar Chart</h4>
+				</div>
+				<div class="card-block">
+					<canvas id="polar-area" height="150" class="chart chart-polar-area" chart-data="ctrl.polarData" chart-labels="ctrl.polarLabels" chart-options="options" chart-colors="ctrl.polarColors"></canvas> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Line Chart</h4>
+				</div>
+				<div class="card-block">
+					<canvas id="line" height="80" class="chart chart-line" chart-data="ctrl.lineData" chart-labels="ctrl.lineLabels" chart-series="ctrl.lineSeries" chart-options="ctrl.lineOptions"  chart-dataset-override="ctrl.lineDatasetOverride" chart-colors="ctrl.lineColors" chart-click="onClick"></canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Bar Chart</h4>
+				</div>
+				<div class="card-block">
+					<canvas id="bar" height="80" class="chart chart-bar" chart-data="ctrl.barData" chart-labels="ctrl.barLabels" chart-series="ctrl.barSeries" chart-colors="ctrl.barColors" >  </canvas>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	

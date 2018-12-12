@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+		<title>Espire - Bootstrap 4 Admin Template</title>
+
+		<!-- Favicon -->
+        <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+		
+		<!-- build:css(.) assets/css/vendor.css -->
+		<link rel="stylesheet" href="assets/vendors/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="bower_components/PACE/themes/blue/pace-theme-minimal.css" />
+		<link rel="stylesheet" href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" />
+		<!-- endbuild -->
+		
+		<!-- lazyload Start -->
+		<link id="lazyload-holder">
+		<!-- lazyload End -->
+		
+		<!-- build:css({.tmp,app}) assets/css/style.css -->
+		<link href="assets/css/ei-icon.css" rel="stylesheet">
+		<link href="assets/css/themify-icons.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/css/animate.min.css" rel="stylesheet">
+		<link href="assets/css/app.css" rel="stylesheet">
+		<!-- endbuild -->
+	</head>
+
+	<body ng-controller="AppCtrl as ctrl">
+
+		<!-- Main view  -->
+		<div class="app is-opened" ng-class="{
+			'is-collapsed': app.layout.isMenuCollapsed,
+			'is-opened': app.layout.isMenuOpened,
+			'rtl' : app.layout.rtlActived
+			}" 
+			ui-view>
+		</div>
+
+		<!-- build:js(.) scripts/vendor.js -->
+		<script src="bower_components/PACE/pace.min.js"></script>
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+		<script src="assets/vendors/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="bower_components/oclazyload/dist/ocLazyLoad.js"></script>
+		<script src="bower_components/ui-jq/jq.js"></script>
+		<script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="bower_components/angular-deep-blur/angular-deep-blur.js"></script>
+		<!-- endbuild -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA80cWOalTZWvHNwZWK9VEVVa3gYzOCKJE"></script>
+
+		<!-- build:js({.tmp,app}) scripts/app.min.js -->
+		<!-- Angular App Script -->
+		<script src="scripts/app.js"></script>
+		<script src="scripts/app.ctrl.js"></script>
+		<script src="scripts/router.config.js"></script>
+		<!-- endbuild -->
+
+	</body>
+</html>

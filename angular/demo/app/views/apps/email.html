@@ -1,0 +1,62 @@
+<div class="full-container" ng-controller="EmailCtrl as ctrl">
+	<div class="email-app" ng-class="{'mail-nav-active': emailLayout.emailNavMobile}">
+		<div class="sec-side-nav">
+			<div class="side-nav-inner">
+				<a href="" ng-click="emailLayout.emailViewMobile = !emailLayout.emailViewMobile; emailLayout.emailNavMobile = !emailLayout.emailNavMobile" ui-sref="email-compose" class="btn btn-info btn-block">Compose</a>
+				<ul>
+					<li>
+						<a ui-sref="email-inbox">
+							<i class="ti-email"></i>
+							<span>Inbox</span>
+							<span class="label label-primary">18</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="ti-star"></i>
+							<span>Starred</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="ti-share"></i>
+							<span>Sent</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="ti-file"></i>
+							<span>Draft</span>
+							<span class="label label-danger">2</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="ti-alert"></i>
+							<span>Spam</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="ti-trash"></i>
+							<span>Deleted</span>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="ti-settings"></i>
+							<span>Setting</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="email-wrapper row">
+			<div class="email-list" ui-view="emailList"></div>
+			<div class="email-content" ng-class="{'open': emailLayout.emailViewMobile}">
+				<div ui-view="emailContent">
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>

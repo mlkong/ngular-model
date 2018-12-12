@@ -1,0 +1,25 @@
+<div class="container-fluid" ng-controller="rickshawCtrl as ctrl">
+	<div class="page-title">
+		<h4>Rickshaw Charts</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Realtime Chart</h4>
+				</div>
+				<div class="card-body">
+					<rickshaw ng-init="toggleRandomSeries(1)" rickshaw-options="realTimeOption" rickshaw-features="realTimeFeatures" rickshaw-series="series1"></rickshaw>
+				</div>
+			</div>	
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Stacked Bar Charts</h4>
+				</div>
+				<div class="card-body">
+					<rickshaw rickshaw-options="rickshawStackedOptions" rickshaw-features="rickshawStackedFeatures" rickshaw-series="rickshawStackedSeries" class="full-width rickshaw-chart"></rickshaw>
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>	

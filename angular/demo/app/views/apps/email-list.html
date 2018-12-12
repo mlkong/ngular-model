@@ -1,0 +1,60 @@
+<div ng-controller="EmailListCtrl as ctrl">
+    <div class="email-list-tools">
+        <ul class="tools pull-left">
+            <li class="d-lg-none">
+                <a href="" ng-click="emailLayout.emailNavMobile = !emailLayout.emailNavMobile">
+                    <i class="ti-menu"></i>
+                </a>
+            </li> 
+           <li>
+                <a href="">
+                    <span class="font-size-14">Mark as Read</span>
+                </a>
+            </li> 
+        </ul>
+        <ul class="tools text-right">
+            <li>
+                <a href="">
+                    <i class="ti-star"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="ti-timer"></i>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="ti-trash"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="email-list-wrapper" data-email="list" ui-jq="perfectScrollbar">
+        <div class="list-view-group-container" ng-repeat="email in ctrl.emails" >
+            <ul class="email-list-item">
+            	<li class="email-item" ng-repeat="emailItem in email.list" data-email-id="{{emailItem.id}}" ng-click="view(emailId); emailLayout.emailViewMobile = !emailLayout.emailViewMobile" ng-init="emailId = emailItem.id"> 
+                    <div class="email-tick">
+                        <div class="checkbox"> 
+                            <input type="checkbox" id="{{$index}}"> 
+                            <label for="{{$index}}"></label> 
+                        </div> 
+                    </div>
+                    <div class="email-detail"> 
+                        <p class="from">{{emailItem.from}}</p> 
+                        <p class="subject">
+                            {{emailItem.subject | limitTo:20}}
+                            {{emailItem.subject.length > 20 ? '...' : ''}}
+                        </p> 
+                        <p class=""> 
+                            {{formatBody(emailItem.body)| limitTo:30}}
+                            {{formatBody(emailItem.body).length > 30 ? '...' : ''}}
+                        </p> 
+                        <span class="datetime">{{emailItem.time}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

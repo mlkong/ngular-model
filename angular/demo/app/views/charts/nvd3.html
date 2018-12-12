@@ -1,0 +1,55 @@
+<div class="container-fluid" ng-controller="nvd3Ctrl as ctrl">
+	<div class="page-title">
+		<h4>Nvd3 Charts</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Line Chart</h4>
+				</div>
+				<div class="card-block">
+					<nvd3 options="ctrl.lineChartOption" data="ctrl.lineChartData" class="with-3d-shadow with-transitions"></nvd3>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Discretebar Chart</h4>
+				</div>
+				<div class="card-block">
+					<nvd3 options="ctrl.barChartOption" data="ctrl.barChartData" class="with-3d-shadow with-transitions"></nvd3>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Stacked Area Chart</h4>
+				</div>
+				<div class="card-block">
+					<nvd3 options="ctrl.areaChartOptions" data="ctrl.areaChartData"></nvd3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Pie Chart</h4>
+				</div>
+				<div class="card-block">
+					<nvd3 options="ctrl.pieChartOption" data="ctrl.donutChartData"></nvd3>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="card">
+				<div class="card-heading border bottom">
+					<h4 class="card-title">Donut Chart</h4>
+				</div>
+				<div class="card-block">
+					<nvd3 options="ctrl.donutChartOption" data="ctrl.donutChartData"></nvd3>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	

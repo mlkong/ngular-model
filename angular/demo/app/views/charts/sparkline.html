@@ -1,0 +1,158 @@
+<div class="container-fluid" ng-controller="sparklineCtrl as ctrl">
+	<div class="page-title">
+		<h4>Sparkline Charts</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<div class="card">
+				<div class="card-block">
+					<div class="inline-block">
+						<h1 class="no-mrg-vertical">$168.90</h1>
+						<p>Monthly Sales</p>
+					</div>
+					<div class="pdd-top-25 inline-block pull-right">
+						<span class="label label-success label-lg mrg-left-5">+18%</span>
+					</div>
+					<div class="mrg-top-35">
+						<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineBarData1" opts="{{ctrl.sparklineBarOption1}}"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="card">
+				<div class="card-block">
+					<div class="row">
+						<div class="col-md-4 border right no-border-md">
+							<small>Yesterday</small>
+							<div class="row">
+								<div class="col-md-6">
+									<h2 class="no-mrg-btm">$168.90</h2>
+									<p>Buy</p>
+									<div class="mrg-top-20">
+										<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineLineData1" opts="{{ctrl.sparklineLineOptions1}}"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2 class="no-mrg-btm">$317.20</h2>
+									<p>Sell</p>
+									<div class="mrg-top-20">
+										<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineLineData1" opts="{{ctrl.sparklineLineOptions2}}"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 border right no-border-md">
+							<small>Last Week</small>
+							<div class="row">
+								<div class="col-md-6">
+									<h2 class="no-mrg-btm">$376.90</h2>
+									<p>Buy</p>
+									<div class="mrg-top-20">
+										<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineLineData1" opts="{{ctrl.sparklineLineOptions1}}"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2 class="no-mrg-btm">$756.20</h2>
+									<p>Sell</p>
+									<div class="mrg-top-20">
+										<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineLineData1" opts="{{ctrl.sparklineLineOptions2}}"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<small>Last Month</small>
+							<div class="row">
+								<div class="col-md-6">
+									<h2 class="no-mrg-btm">$2768.90</h2>
+									<p>Buy</p>
+									<div class="mrg-top-20">
+										<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineLineData1" opts="{{ctrl.sparklineLineOptions1}}"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<h2 class="no-mrg-btm">$6432.85</h2>
+									<p>Sell</p>
+									<div class="mrg-top-20">
+										<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineLineData1" opts="{{ctrl.sparklineLineOptions2}}"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block text-center">
+					<h4 class="card-title">Today Sales</h4>
+					<div class="mrg-top-40 mrg-btm-20">
+						<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineBarData2" opts="{{ctrl.sparklineBarOption2}}"></div>
+					</div>
+					<h4 class="text-gray">$2,597 <i class="ti-arrow-up text-success"></i></h4>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block text-center">
+					<h4 class="card-title">Visitors</h4>
+					<div class="mrg-top-40 mrg-btm-20">
+						<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklinePieData1" opts="{{ctrl.sparklinePieOptions1}}"></div>
+					</div>
+					<h4 class="text-gray">378 <i class="ti-arrow-down text-danger"></i></h4>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block text-center">
+					<h4 class="card-title">Bounce rate</h4>
+					<div class="mrg-top-40 mrg-btm-20">
+						<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineLineData2" opts="{{ctrl.sparklineLineOptions4}}"></div>
+					</div>
+					<h4 class="text-gray">378 <i class="ti-arrow-down text-danger"></i></h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block text-center">
+					<h4 class="card-title">Today Sales</h4>
+					<div class="mrg-top-40 mrg-btm-20">
+						<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineLineData1" opts="{{ctrl.sparklineDiscreteOptions1}}"></div>
+					</div>
+					<h4 class="text-gray">$2,597 <i class="ti-arrow-up text-success"></i></h4>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block text-center">
+					<h4 class="card-title">Today Sales</h4>
+					<div class="mrg-top-40 mrg-btm-20">
+						<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineTristateData1" opts="{{ctrl.sparklineTristateOptions1}}"></div>
+					</div>
+					<h4 class="text-gray">$2,597 <i class="ti-arrow-up text-success"></i></h4>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block text-center">
+					<h4 class="card-title">Today Sales</h4>
+					<div class="mrg-top-40 mrg-btm-20">
+						<div jq-sparkline class="sparkline-chart" ng-model="ctrl.sparklineTristateData1" opts="{{ctrl.sparklineLineOptions3}}"></div>
+					</div>
+					<h4 class="text-gray">$2,597 <i class="ti-arrow-up text-success"></i></h4>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>	

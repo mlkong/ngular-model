@@ -1,0 +1,22 @@
+<div class="email-compose" ng-controller="EmailComposeCtrl as ctrl">
+	<div class="email-compose-tools">
+		<ul>
+			<li>
+				<a href="javascript:void(0)" ng-click="emailLayout.emailViewMobile = !emailLayout.emailViewMobile">
+					<i class="ti-arrow-circle-left"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="email-compose-body">
+		<div class="send-header">
+			<selectize config='ctrl.sendConfig' ng-model="myModel"></selectize>
+			<input class="form-control subject" placeholder="Add a subject">
+		</div>
+		<summernote height="400"></summernote>
+		<div class="text-right mrg-top-30">
+			<button class="btn btn-default">Discard</button>
+			<button class="btn btn-info">Send</button>
+		</div>
+	</div>
+</div>

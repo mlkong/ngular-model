@@ -1,0 +1,75 @@
+<sidebar class="side-nav">
+	<div class="side-nav-inner">
+		<div class="side-nav-logo">
+			<a ui-sref="index.main">
+				<div class="logo logo-dark" style="background-image: url('assets/images/logo/logo.png')"></div>
+				<div class="logo logo-white" style="background-image: url('assets/images/logo/logo-white.png')"></div>
+			</a>
+			<div class="mobile-toggle">
+				<a href="" ng-click="app.layout.isMenuCollapsed = !app.layout.isMenuCollapsed ; app.layout.isMenuOpened = !app.layout.isMenuOpened">
+					<i class="ti-arrow-circle-left"></i>
+				</a>
+			</div>
+		</div>
+		<ul class="side-nav-menu" ui-jq="perfectScrollbar">
+			<li class="nav-item">
+				<a class="mrg-top-30" ui-sref="index.main">
+					<span class="icon-holder">
+						<i class="ti-home"></i>
+					</span>
+					<span class="title">Dashboard</span>
+				</a>
+			</li>
+			<li class="nav-item dropdown" ng-class="{'open':$state.includes('index.ui')}">
+				<a class="dropdown-toggle" href="javascript:void(0);">
+					<span class="icon-holder">
+						<i class="ti-layout-media-overlay"></i>
+					</span>
+					<span class="title">Dropdown</span>
+					<span class="arrow">
+						<i class="ti-angle-right"></i>
+					</span>
+				</a>
+				<ul class="dropdown-menu">
+					<li ui-sref-active="active">
+						<a ui-sref="">item 1</a>
+					</li>
+					<li ui-sref-active="active">
+						<a ui-sref="">item 2</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="dropdown-toggle" href="javascript:void(0);">
+					<span class="icon-holder">
+						<i class="ti-view-list-alt"></i>
+					</span>
+					<span class="title">Multi Levels</span>
+					<span class="arrow">
+						<i class="ti-angle-right"></i>
+					</span>
+				</a>
+				<ul class="dropdown-menu">
+					<li class="nav-item dropdown">
+						<a href="javascript:void(0);">
+							<span>Level 1.2</span>
+						</a>
+					</li>	
+					<li class="nav-item dropdown">
+						<a href="javascript:void(0);">
+							<span>Level 1.1</span>
+							<span class="arrow">
+								<i class="ti-angle-right"></i>
+							</span>
+						</a>
+						<ul class="dropdown-menu">
+							<li >
+								<a href="javascript:void(0);">Level 2</a>
+							</li>         
+						</ul>
+					</li>         
+				</ul>
+			</li>
+		</ul>
+	</div>
+</sidebar>

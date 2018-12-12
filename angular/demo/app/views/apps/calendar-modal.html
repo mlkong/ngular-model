@@ -1,0 +1,34 @@
+<div class="border btm padding-15">
+	<h4 class="no-mrg">Edit Event</h4>
+</div>
+<div class="modal-body">
+	<form>
+		<div class="form-group">
+			<label>Event title</label>
+			<input class="form-control" ng-model="event.title">
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<label>Start</label>
+				<div class="timepicker-input input-icon form-group">
+					<i class="ti-calendar"></i>
+					<input type="text" class="form-control" ui-jq="datepicker" placeholder="Datepicker" ng-model="event.start">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<label>End</label>
+				<div class="timepicker-input input-icon form-group">
+					<i class="ti-calendar"></i>
+					<input type="text" class="form-control" ui-jq="datepicker" placeholder="Datepicker" ng-model="event.end">
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Event title</label>
+			<textarea class="form-control" ng-model="event.desc"></textarea>
+		</div>
+		<div class="text-right">
+			<button class="btn btn-success" ng-click="ctrl.ok()">Done</button>
+		</div>
+	</form>
+</div>

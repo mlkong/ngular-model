@@ -1,0 +1,101 @@
+<div class="container-fluid" ng-controller="ModalsCtrl as ctrl">
+	<div class="page-title">
+		<h4>Modals</h4>
+	</div>	
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-block">
+					<div class="row">
+						<div class="col-md-4">
+							<h5 class="mrg-btm-10">Default Modal</h5>
+							<img class="img-fluid mrg-horizon-auto mrg-btm-15" src="assets/images/others/modal-md.jpg" alt="">
+							<div class="row">
+								<div class="col-lg-8 col-md-12">
+									<p class="font-size-12">This is default modal with or without animation. simply add your animation class to modal animate it.</p>
+								</div>
+								<div class="col-lg-4 col-md-12 text-right pdd-top-5">
+									<button ng-click="ctrl.modalDefault()" class="btn btn-sm btn-primary">Trigger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h5 class="mrg-btm-10">Side Modal Right</h5>
+							<img class="img-fluid mrg-horizon-auto mrg-btm-15" src="assets/images/others/modal-right.jpg" alt="">
+							<div class="row">
+								<div class="col-lg-8 col-md-12">
+									<p class="font-size-12">This is side modal with right slide in animation. Modal backdrop is removable by adding <code>.no-backdrop</code> class.</p>
+								</div>
+								<div class="col-lg-4 col-md-12 text-right pdd-top-5">
+									<button ng-click="ctrl.modalRight()" class="btn btn-sm btn-primary">Trigger</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h5 class="mrg-btm-10">Side Modal Left</h5>
+							<img class="img-fluid mrg-horizon-auto mrg-btm-15" src="assets/images/others/modal-left.jpg" alt="">
+							<div class="row">
+								<div class="col-lg-8 col-md-12">
+									<p class="font-size-12">This is side modal with left slide in animation. Modal backdrop is removable by adding <code>.no-backdrop</code> class.</p>
+								</div>
+								<div class="col-lg-4 col-md-12 text-right pdd-top-5">
+									<button ng-click="ctrl.modalLeft()" class="btn btn-sm btn-primary">Trigger</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block">
+					<h5 class="mrg-btm-10">Modal Small</h5>
+					<img class="img-fluid mrg-horizon-auto mrg-btm-15" src="assets/images/others/modal-sm.jpg" alt="">
+					<div class="row">
+						<div class="col-lg-8 col-md-12">
+							<p class="font-size-12">Modal size is configurable, Add class <code>.modal-sm</code> to smaller modal window</p>
+						</div>
+						<div class="col-lg-4 col-md-12 text-right pdd-top-5">
+							<button ng-click="ctrl.modalDefaultSm()" class="btn btn-sm btn-primary">Trigger</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block">
+					<h5 class="mrg-btm-10">Modal Large</h5>
+					<img class="img-fluid mrg-horizon-auto mrg-btm-15" src="assets/images/others/modal-lg.jpg" alt="">
+					<div class="row">
+						<div class="col-lg-8 col-md-12">
+							<p class="font-size-12">Modal size is configurable, Add class <code>.modal-lg</code> to bigger modal window</p>
+						</div>
+						<div class="col-lg-4 col-md-12 text-right pdd-top-5">
+							<button ng-click="ctrl.modalDefaultLg()" class="btn btn-sm btn-primary">Trigger</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-block">
+					<h5 class="mrg-btm-10">Modal Full Screen</h5>
+					<img class="img-fluid mrg-horizon-auto mrg-btm-15" src="assets/images/others/modal-fs.jpg" alt="">
+					<div class="row">
+						<div class="col-lg-8 col-md-12">
+							<p class="font-size-12">Modal is a full screen popup, Add class <code>.modal-fs</code> to make modal window full screen</p>
+						</div>
+						<div class="col-lg-4 col-md-12 text-right pdd-top-5">
+							<button ng-click="ctrl.modalDefaultFs()" class="btn btn-sm btn-primary">Trigger</button>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>	

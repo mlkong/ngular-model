@@ -1,0 +1,30 @@
+<div class="layout" ng-class="[ctrl.headerSelected, ctrl.sidenavSelected]">
+	<!-- Side Nav START -->
+	<div class="side-nav" ng-include="'views/common/side-nav.html'"></div>
+	<!-- Side Nav END -->
+
+	
+	<!-- Page Container START -->
+	<div class="page-container">
+	  
+	    <!-- Top Nav START -->
+	    <div class="header navbar" ng-include="'views/common/header.html'"></div>
+	    <!-- Top Nav END -->
+	  
+	    <!-- Side Panel START -->
+	    <div class="side-panel" ng-class="{'side-panel-open' : app.layout.sidePanelOpen}"  ng-include="'views/common/side-panel.html'"></div>
+		<!-- Side Panel END -->
+		
+	    <!-- Content Wrapper START -->
+	    <div class="main-content" ng-include="'views/common/main-content.html'"></div>
+	    <!-- Content Wrapper END -->
+  
+	    <!-- Footer START -->
+	    <footer class="content-footer" ng-include="'views/common/footer.html'"></footer>
+	    <!-- Footer END -->
+	  
+	</div>
+	<!--  Page Container END -->
+</div>
+
+

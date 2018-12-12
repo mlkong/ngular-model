@@ -1,0 +1,181 @@
+<div class="container-fluid" ng-controller="ProgressCtrl as ctrl">
+	<div class="page-title">
+		<h4>Progress Bar</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-block">
+					<div class="row">
+						<div class="col-md-4">
+							<h4 class="card-title">Basic Progress Bar</h4>
+							<div class="row mrg-top-30">
+								<div class="col-md-10">
+									<div class="progress">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="80"  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+									    </div>
+									</div>
+									<div class="progress progress-primary">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="70"  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+									    </div>
+									</div>
+									<div class="progress progress-success">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="75"  aria-valuemin="0" aria-valuemax="100" style="width:75%">
+									    </div>
+									</div>
+									<div class="progress progress-info">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="90"  aria-valuemin="0" aria-valuemax="100" style="width:90%">
+									    </div>
+									</div>
+									<div class="progress progress-warning">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="80"  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+									    </div>
+									</div>
+									<div class="progress progress-danger">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="85"  aria-valuemin="0" aria-valuemax="100" style="width:85%">
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h4 class="card-title">Progress Bar Size</h4>
+							<div class="row mrg-top-30">
+								<div class="col-md-10">
+									<div class="progress progress-primary">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="30"  aria-valuemin="0" aria-valuemax="100" style="width:30%">
+									    </div>
+									</div>
+									<div class="progress progress-primary progress-sm ">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="50"  aria-valuemin="0" aria-valuemax="100" style="width:50%">
+									    </div>
+									</div>
+									<div class="progress progress-primary progress-md ">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="70"  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+									    </div>
+									</div>
+									<div class="progress progress-primary progress-lg ">
+									    <div class="progress-bar" role="progressbar" aria-valuenow="90"  aria-valuemin="0" aria-valuemax="100" style="width:90%">
+									    </div>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="col-md-4">
+							<h4 class="card-title">Progress Bar Striped</h4>
+							<div class="row mrg-top-30">
+								<div class="col-md-10">
+									<div class="progress progress-primary">
+									    <div class="progress-bar active progress-bar-striped" role="progressbar" aria-valuenow="30"  aria-valuemin="0" aria-valuemax="100" style="width:30%">
+									    </div>
+									</div>
+									<div class="progress progress-success progress-sm ">
+									    <div class="progress-bar active progress-bar-striped" role="progressbar" aria-valuenow="50"  aria-valuemin="0" aria-valuemax="100" style="width:50%">
+									    </div>
+									</div>
+									<div class="progress progress-info progress-md ">
+									    <div class="progress-bar active progress-bar-striped" role="progressbar" aria-valuenow="70"  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+									    </div>
+									</div>
+									<div class="progress progress-warning progress-lg ">
+									    <div class="progress-bar active progress-bar-striped" role="progressbar" aria-valuenow="90"  aria-valuemin="0" aria-valuemax="100" style="width:90%">
+									    </div>
+									</div>
+								</div>
+							</div>	
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page-title">
+		<h4>Slider</h4>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-block">
+					<div class="row">
+						<div class="mr-auto ml-auto col-md-10">
+							<div class="row">
+								<div class="col-md-6">
+									<h4 class="card-title">Horizontal Slider</h4>
+									<div class="row mrg-top-30">
+										<div class="col-md-10">
+											<div class="mrg-btm-40">
+												<div ya-no-ui-slider='ctrl.horizonSlider1'></div>
+											</div>
+											<div class="mrg-btm-40">
+												<div class="slider-primary" ya-no-ui-slider='ctrl.horizonSlider2'></div>
+											</div>
+											<div class="mrg-btm-40">
+												<div class="slider-success" ya-no-ui-slider='ctrl.horizonSlider3'></div>
+											</div>
+											<div class="mrg-btm-40">
+												<div class="slider-info" ya-no-ui-slider='ctrl.horizonSlider4'></div>
+											</div>
+											<div class="mrg-btm-40">
+												<div class="slider-warning" ya-no-ui-slider='ctrl.horizonSlider5'></div>
+											</div>
+											<div class="mrg-btm-40">
+												<div class="slider-danger" ya-no-ui-slider='ctrl.horizonSlider6'></div>
+											</div>
+										</div>
+									</div>
+								</div>	
+								<div class="col-md-6">
+									<h4 class="card-title">Vertical Slider</h4>
+									<div class="row mrg-top-30">
+										<div class="col-md-10">
+											<div style="height: 240px">
+												<div class="mrg-right-40" ya-no-ui-slider='ctrl.verticalSlider1'></div>
+												<div class="slider-primary mrg-right-50" ya-no-ui-slider='ctrl.verticalSlider2'></div>
+												<div class="slider-success mrg-right-50" ya-no-ui-slider='ctrl.verticalSlider3'></div>
+												<div class="slider-info mrg-right-50" ya-no-ui-slider='ctrl.verticalSlider4'></div>
+												<div class="slider-warning mrg-right-50" ya-no-ui-slider='ctrl.verticalSlider5'></div>
+												<div class="slider-danger mrg-right-50" ya-no-ui-slider='ctrl.verticalSlider6'></div>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>	
+					<div class="row mrg-top-70">
+						<div class="mr-auto ml-auto col-md-7">
+							<h4 class="card-title">Ranged Slider</h4>
+							<div class="mrg-top-30">
+								<div class="slider-primary" ya-no-ui-slider='ctrl.rangedSlider'></div>
+							</div>
+							<div class="mrg-top-10">
+								<p class="inline-block"><b>Min: </b><span>$ {{ctrl.rangedSlider.start[0]}}</span></p>
+								<p class="pull-right"><b>Max: </b><span>$ {{ctrl.rangedSlider.start[1]}}</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="row mrg-top-70">
+						<div class="mr-auto ml-auto col-md-7">
+							<h4 class="card-title">Tab Drag Slider</h4>
+							<div class="mrg-top-30">
+								<div class="slider-info" ya-no-ui-slider='ctrl.tabDragSlider'></div>
+							</div>
+							<div class="mrg-top-10">
+								<p class="inline-block"><b>Min: </b><span>$ {{ctrl.tabDragSlider.start[0]}}</span></p>
+								<p class="pull-right"><b>Max: </b><span>$ {{ctrl.tabDragSlider.start[1]}}</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="row mrg-vertical-70">
+						<div class="mr-auto ml-auto col-md-7">
+							<h4 class="card-title">Step Slider</h4>
+							<div class="mrg-top-30">
+								<div class="slider-info" ya-no-ui-slider='ctrl.stepSlider'></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
